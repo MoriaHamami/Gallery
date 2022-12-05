@@ -56,7 +56,7 @@ function renderGallery() {
                 </div>
                 <img class="img-fluid" src="img/portfolio/${project.id}.png" alt="">
             </a>
-            <div class="portfolio-caption sm-w-400">
+            <div class="portfolio-caption w-100">
                 <h4>${project.name}</h4>
                 <p class="text-muted">${project.title}</p>
             </div>

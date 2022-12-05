@@ -136,14 +136,14 @@ body {
     cursor: pointer;
 }
 #mainNav .navbar-brand {
-    color: #62b0c0;
+    color: #9ad6e1;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #a3dee9;
+    color: #c8ebf2;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -151,13 +151,13 @@ body {
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #369dfe;
+    color: #000000;
 }
 @media (min-width: 992px) {
     
@@ -192,7 +192,7 @@ body {
 }
 header.masthead {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -201,6 +201,7 @@ header.masthead {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 header.masthead .intro-text {
     padding-top: 150px;
@@ -722,8 +723,8 @@ fieldset[disabled] .btn-primary:hover {
 .btn-xl.focus,
 .btn-xl:focus {
     color: white;
-    border-color: #b48b01;
-    background-color: #fec503;
+    border-color: #438896;
+    background-color: #62b0c0;
 }
 .btn-xl:hover {
     color: white;
@@ -734,8 +735,8 @@ fieldset[disabled] .btn-primary:hover {
 .btn-xl:active,
 .open > .btn-xl.dropdown-toggle {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: #438896;
+    background-color: #62b0c0;
 }
 .btn-xl.active.focus,
 .btn-xl.active:focus,
@@ -747,8 +748,8 @@ fieldset[disabled] .btn-primary:hover {
 .open > .btn-xl.dropdown-toggle:focus,
 .open > .btn-xl.dropdown-toggle:hover {
     color: white;
-    border-color: #b48b01;
-    background-color: #dcab01;
+    border-color: #438896;
+    background-color: #62b0c0;
 }
 .btn-xl.active,
 .btn-xl:active,
@@ -764,8 +765,8 @@ fieldset[disabled] .btn-primary:hover {
 fieldset[disabled] .btn-xl.focus,
 fieldset[disabled] .btn-xl:focus,
 fieldset[disabled] .btn-xl:hover {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #438896;
+    background-color: #62b0c0;
 }
 .btn-xl .badge {
     color: #fed136;
@@ -781,4 +782,5 @@ fieldset[disabled] .btn-xl:hover {
 .container {
     padding-right: 0;
     padding-left: 0;
+
 }
