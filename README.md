@@ -1,14 +1,13 @@
-# [Cosing Academy - Base Gallery]
-A responsive portfolio grid to be used by Coding Academy students
+#  My Gallery
+A responsive portfolio grid, displaying the projects I have worked on lately.
 
 
 ## Usage
 
-### Basic Usage
+### Gallery URL 
 
-After downloading, simply edit the HTML, CSS and JS files included with the template to Make-it-Yours.
+Check out my gallery @ https://moriahamami.github.io/Gallery/
 
 
-## Copyright and License
-
-Code released under the [MIT] license.
+### Copyright and License
+#### Code released under the [MIT] license.
