@@ -46,11 +46,11 @@ section h3.section-subheading {
     }
 }
 ::-moz-selection {
-    background: #fed136;
+    background: #95cde7;
     text-shadow: none;
 }
 ::selection {
-    background: #fed136;
+    background: #95cde7;
     text-shadow: none;
 }
 img::selection {
@@ -60,7 +60,7 @@ img::-moz-selection {
     background: transparent;
 }
 body {
-    -webkit-tap-highlight-color: #fed136;
+    -webkit-tap-highlight-color: #95cde7;
 }
 .offcanvas-btn {
     z-index: 100000;
@@ -151,13 +151,13 @@ body {
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: rgb(0, 0, 0);
+    color: #445f86;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #000000;
+    color: #445f86;
 }
 @media (min-width: 992px) {
     
@@ -182,7 +182,7 @@ body {
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #222222;
+        background-color: #445f86;
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
@@ -465,7 +465,7 @@ header.masthead .intro-text .intro-heading {
     color: white;
     border: 7px solid #f1f1f1;
     border-radius: 100%;
-    background-color: #fed136;
+    background-color: #95cde7;
 }
 .timeline > li .timeline-image h4 {
     font-size: 10px;

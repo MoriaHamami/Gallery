@@ -26,7 +26,7 @@
 </head>
 
 <body onload="onInit()" id="page-top">
-  <div class="offcanvas-btn" onClick="openCanvas()">
+  <div class="offcanvas-btn" onclick="openCanvas()">
     <i class="fa fa-comment" aria-hidden="true"></i>
   </div>
   <aside class="offcanvas-aside">
@@ -70,10 +70,10 @@
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#me">Me</a>
+            <a class="nav-link js-scroll-trigger" href="#me">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact" onclick="openCanvas()">Contact</a>
           </li>
         </ul>
       </div>
@@ -97,17 +97,17 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Specialities</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">Know what you choose.</h3>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-info"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-pagelines fa-stack-1x fa-inverse"></i>
             </span>
           <h4 class="service-heading">Smart & Appealing Construction</h4>
-          <p class="text-muted">Fullfilling every need and task in the least time possible, while making sure .</p>
+          <p class="text-muted">Fullfilling every need and task with great attention to details, while using an interactive user experience and an appealing visual design.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -115,16 +115,15 @@
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
           <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
-            magni, dicta impedit.</p>
+          <p class="text-muted">Creating a responsive design, fit for users who are using their mobile screen, tablet or laptop, without devaluating the user experience.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-info"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
             </span>
-          <h4 class="service-heading">Wide Range of Capabilities</h4>
-          <p class="text-muted">There is a wide range of tools . Options for sites.</p>
+          <h4 class="service-heading">Wide Range of Tools</h4>
+          <p class="text-muted">Using skills skills such as JavaScript, web animation techniques, Coding languages including HTML and CSS, Bootstrap, and writing code which interprets the user inputs. The ability to store information to a database and perform functions on inputs.</p>
         </div>
       </div>
     </div>
@@ -143,7 +142,6 @@
       </div> 
     </div>
   </section>
-
 
   <!-- Me -->
   <section class="bg-light py-3" id="me" style="padding: 0px;">
@@ -180,51 +178,6 @@
         </div>
       </div>
   </section>
-
-
-  <!-- Footer for Future Use -->
-  <!-- <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 flex-align-center">
-          <a href="http://coding-academy.org" target="_blank">
-            <img src="./img/ca-logo.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-4 flex-align-center">
-          <ul class="list-inline social-buttons flex-align-center">
-            <li class="list-inline-item">
-              <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-            <li class="list-inline-item flex-align-center">
-              <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4 flex-align-center">
-            <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">More Me</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Even More</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer> -->
-
-  <!-- Portfolio Modals -->
 
   <!-- Modal -->
   <div class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
