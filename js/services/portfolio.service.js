@@ -1,102 +1,86 @@
 'use strict'
-const STORAGE_KEY = 'carDB'
-const gVendors = ['audi', 'fiat', 'suzuki', 'honda']
-const PAGE_SIZE = 5
 
+var gGallery
 
-var gPageIdx = 0
-var gCars
-var gFilterBy = { vendor: '', minSpeed: 0 }
+_createGallery()
 
-_createCars()
-
-function getVendors() {
-    return gVendors
+function getGallery() {
+    return gGallery
 }
 
-function nextPage() {
-    gPageIdx++
-    if (gPageIdx * PAGE_SIZE >= gCars.length) {
-        gPageIdx = 0
-    }
+function getProjectById(projectId) {
+    const project = gGallery.find(project => projectId === project.id)
+    return project
 }
 
-function getCars() {
-    var cars = gCars.filter(car => car.vendor.includes(gFilterBy.vendor) &&
-        car.maxSpeed >= gFilterBy.minSpeed)
-
-    var startIdx = gPageIdx * PAGE_SIZE
-    return cars.slice(startIdx, startIdx + PAGE_SIZE)
-}
-
-function deleteCar(carId) {
-    const carIdx = gCars.findIndex(car => carId === car.id)
-    gCars.splice(carIdx, 1)
-    _saveCarsToStorage()
-}
-
-function addCar(vendor) {
-    const car = _createCar(vendor)
-    gCars.unshift(car)
-    _saveCarsToStorage()
-    return car
-}
-
-function getCarById(carId) {
-    const car = gCars.find(car => carId === car.id)
-    return car
-}
-
-function updateCar(carId, newSpeed) {
-    const car = gCars.find(car => car.id === carId)
-    car.maxSpeed = newSpeed
-    _saveCarsToStorage()
-    return car
-}
-
-
-
-function setCarFilter(filterBy = {}) {
-    gPageIdx = 0
-    if (filterBy.vendor !== undefined) gFilterBy.vendor = filterBy.vendor
-    if (filterBy.minSpeed !== undefined) gFilterBy.minSpeed = filterBy.minSpeed
-    return gFilterBy
-}
-
-
-function setCarSort(sortBy = {}) {
-    gPageIdx = 0
-    if (sortBy.maxSpeed !== undefined) {
-        gCars.sort((c1, c2) => (c1.maxSpeed - c2.maxSpeed) * sortBy.maxSpeed)
-    } else if (sortBy.vendor !== undefined) {
-        gCars.sort((c1, c2) => c1.vendor.localeCompare(c2.vendor) * sortBy.vendor)
-    }
-}
-
-function _createCar(vendor) {
+function _createProject(id, name, title, desc, url, publishedAt, labels) {
     return {
-        id: makeId(),
-        vendor,
-        maxSpeed: getRandomIntInclusive(50, 250),
-        desc: makeLorem()
+        id,
+        name,
+        title,
+        desc,
+        url,
+        publishedAt,
+        labels
     }
 }
 
-function _createCars() {
-    var cars = loadFromStorage(STORAGE_KEY)
-    // Nothing in storage - generate demo data
-    if (!cars || !cars.length) {
-        cars = []
-        for (let i = 0; i < 21; i++) {
-            var vendor = gVendors[getRandomIntInclusive(0, gVendors.length - 1)]
-            cars.push(_createCar(vendor))
-        }
-    }
-    gCars = cars
-    _saveCarsToStorage()
+function _createGallery() {
+    gGallery = [
+        _createProject(
+            'booksShop',
+            'Book Store',
+            'CRUDL | Transition & Flexbox | URL Search Parameters | Sort & Filter',
+            'desc',
+            'https://moriahamami.github.io/Books-Shop/',
+            1669900260000,
+            ['Modal', 'Transition', 'CRUDL', 'CSS', 'Flexbox', 'Book', 'Shop', 'Store', 'Online', 'URLSearchParams', 'Query string', 'Sort', 'Filter', 'Pages', 'Page', 'Storage']
+        ),
+        _createProject(
+            'inPicture',
+            'What is in the Picture',
+            'Sounds | Game | Modal',
+            'desc',
+            'https://moriahamami.github.io/In-Picture-Game/',
+            1668711600000,
+            ['Sound', 'Game', 'Modal', 'Render', 'Events']
+        ),
+        _createProject(
+            'minesweeper',
+            'Mine Sweeper',
+            'Recurssion | Vanilla CSS | Timer | Matrix | Bonus Features',
+            'desc',
+            'https://moriahamami.github.io/Mine-Sweeper/',
+            1669489200000,
+            ['Interval', 'Timeout', 'Hide', 'Toggle', 'Dark Mode', 'Neighbors', 'Matrix', 'Timer', 'Vanilla', 'Mouse Events', 'Board', 'Levels', 'Context Menu', 'Prevent Default']
+        ),
+        _createProject(
+            'pacman',
+            'Pacman',
+            'Board Game | Neighbors in Matrix',
+            'desc',
+            'https://moriahamami.github.io/Pacman/',
+            1669057200000,
+            ['Board', 'Game', 'Keyboard Events', 'Neighbors', 'Matrix', 'Hide', 'Timeout', 'Random Color', 'Random Integer']
+        ),
+        _createProject(
+            'collectBalls',
+            'Collect Balls',
+            'Board Game | Portals | Keyboard & Mouse Usage | Sounds',
+            'desc',
+            'https://moriahamami.github.io/Ball-Board/',
+            1668970800000,
+            ['Portals', 'Keyboard Events', 'Mouse Events', 'Game', 'Board', 'Matrix', 'Vanilla CSS', 'Sounds', 'Render', 'Neighbors']
+        ),
+        _createProject(
+            'guessWho',
+            'Guess Who',
+            'jQuery | Bootstrap | Tree Data Structure | Storage',
+            'desc',
+            'https://moriahamami.github.io/Guess-Who/',
+            1670159220000,
+            ['Library', 'jQuery', 'Bootstrap', 'Developing', 'Smart', 'Learner', 'Tree', 'Structure', 'Array Extras', 'Stroage']
+        ),
+    ]
 }
 
-
-function _saveCarsToStorage() {
-    saveToStorage(STORAGE_KEY, gCars)
-}

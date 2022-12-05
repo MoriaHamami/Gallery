@@ -290,7 +290,7 @@ header.masthead .intro-text .intro-heading {
     margin: 0 auto;
     padding: 25px;
     text-align: center;
-    background-color: white;
+    background-color: rgb(229, 232, 233);
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
@@ -305,6 +305,18 @@ header.masthead .intro-text .intro-heading {
 #portfolio * {
     z-index: 2;
 }
+
+/* my edit moria */
+.portfolio-item{
+    display: flex;
+    flex-direction: column; 
+}
+
+/* my edit moria */
+.portfolio-caption{
+    flex-grow: 1;
+}
+
 @media (min-width: 767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
