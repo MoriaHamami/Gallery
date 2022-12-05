@@ -69,7 +69,7 @@ body {
     right: 3%;
     height: 50px;
     width: 50px;
-    background: #e2cb36;
+    background: #9acbdd;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -77,6 +77,7 @@ body {
     cursor: pointer;
     margin-right: 0;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 .offcanvas-btn-open {
     margin-right: 80vw;
@@ -84,7 +85,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background: #8dbdce;
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -129,20 +130,22 @@ body {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fed136;
+    background-color: #62b0c0;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    cursor: pointer;
 }
 #mainNav .navbar-brand {
-    color: #fed136;
+    color: #62b0c0;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #fec503;
+    color: #a3dee9;
 }
+
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -154,7 +157,7 @@ body {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fed136;
+    color: #369dfe;
 }
 @media (min-width: 992px) {
     
@@ -263,7 +266,7 @@ header.masthead .intro-text .intro-heading {
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background: rgba(254, 209, 54, 0.9);
+    background: rgba(117, 193, 203, 0.9);
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
@@ -635,7 +638,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #fed136;
+    background-color: #5facc8;
 }
 .flex-align-center {
     display: flex;
@@ -711,8 +714,8 @@ fieldset[disabled] .btn-primary:hover {
     padding: 20px 40px;
     border-radius: 3px;
     color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #438896;
+    background-color: #62b0c0;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
@@ -724,8 +727,8 @@ fieldset[disabled] .btn-primary:hover {
 }
 .btn-xl:hover {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: #7cc1cf;
+    background-color: #7cc8d7;
 }
 .btn-xl.active,
 .btn-xl:active,
