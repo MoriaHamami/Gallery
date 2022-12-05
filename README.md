@@ -1,9 +1,6 @@
 #  My Gallery
 A responsive portfolio grid, displaying the projects I have worked on lately.
 
-
-## Usage
-
 ### Gallery URL 
 
 Check out my gallery @ https://moriahamami.github.io/Gallery/
